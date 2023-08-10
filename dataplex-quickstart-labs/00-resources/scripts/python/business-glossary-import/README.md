@@ -9,10 +9,16 @@ report is printed and import continues or completely stops depending on input fl
 Business Glossary API is currently on private preview, and it needs to be
 enabled on the project for it to be used.
 
+## setup environment
+1. create Python virtual environment e.g. `python3 -m venv .venv`
+2. activate virtual environment `. .venv/bin/activate`
+3. install dependencies. This step is missing from Google project. `pip install -r requirements.txt`
+4. run the python script as Usage. e.g. `python bg_import/business_glossary_import.py -h`
+
 ## Usage
 
 ```
-python3 bg_import/business_glossary_import.py <csv file>
+python bg_import/business_glossary_import.py <csv file>
   --project=<project_id>
   --group=<entry_group_id>
   --glossary=<glossary_id>
